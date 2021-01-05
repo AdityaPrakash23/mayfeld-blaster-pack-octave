@@ -10,10 +10,10 @@ theta1 = (theta1 * pi) / 180;
 A01 = dhMatrix(0,pi/2,a1,theta1);
 
 %TF Matrix A2
-offset = input('Enter offset : ');
+offset1 = input('Enter offset1 : ');
 theta2 = input('Enter theta2 : ');
 theta2 = (theta2 * pi) / 180;
-A12 = dhMatrix(0,pi/2,offset,theta2 - (pi/2));
+A12 = dhMatrix(0,pi/2,offset1,theta2 - (pi/2));
 
 %TF Matrix A3
 d3 = input('Enter d3 : ');
@@ -28,8 +28,9 @@ A34 = dhMatrix(a4,0,0,theta4);
 
 %TF Matrix A5
 theta5 = input('Enter theta5 : ');
+offset2 = input('Enter offset2 : ');
 theta5 = (theta5 * pi) / 180;
-A45 = dhMatrix(0,pi/2,0,theta5 + (pi/2));
+A45 = dhMatrix(0,pi/2,offset2,theta5 + (pi/2));
 
 %TF Matrix A6
 a = input('Enter a : ');
